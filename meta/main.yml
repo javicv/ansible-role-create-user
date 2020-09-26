@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: create_user
   author: Javier Collado
   description: Create a user with an authorized key to log in
   company: javicollado.com

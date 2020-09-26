@@ -1,13 +1,13 @@
 ---
-- name: "Create user {{username}}"
+- name: "Create user {{ username }}"
   user:
-    name: "{{username}}"
-    comment: "{{full_name}}"
-    shell: "{{user_shell}}"
+    name: "{{ username }}"
+    comment: "{{ full_name }}"
+    shell: "{{ user_shell }}"
     state: present
 
-- name: "Add authorized key to {{username}}"
+- name: "Add authorized key to {{ username }}"
   authorized_key:
-    user: "{{username}}"
-    key: "{{public_key}}"
+    user: "{{ username }}"
+    key: "{{ public_key }}"
     state: present
