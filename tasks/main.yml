@@ -3,7 +3,7 @@
   user:
     name: "{{ username }}"
     comment: "{{ full_name }}"
-    shell: "{{ user_shell }}"
+    shell: "{{ user_shell | default('/bin/bash') }}"
     state: present
 
 - name: "Add authorized key to {{ username }}"
