@@ -23,6 +23,8 @@ galaxy_info:
     - all
 
   galaxy_tags:
+  - system
+  - security
   - user
   - creation
 
